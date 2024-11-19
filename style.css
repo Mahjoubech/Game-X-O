@@ -49,6 +49,7 @@ body{
     align-items: center;
     cursor: pointer;
     transition: all 0.5s ;
+    font-size: 50px;
 }
 .squr:hover{
   background: rgba(0,0,0,0.3);
