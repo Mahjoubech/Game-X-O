@@ -17,9 +17,11 @@ for(let itm of squr){
        sqcnt.innerHTML = crr;
        data[index] = crr 
       console.log(data);
+      let inst = document.getElementById('instract')
+    
         winner();
        crr === "X"? crr = "O": crr = "X";
-       
+         inst.textContent = `${crr} Turn`
       
     })
     function winner(){
