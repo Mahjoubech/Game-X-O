@@ -89,5 +89,10 @@ for(let itm of squr){
                let value = itm.getAttribute("value") ;
                let sqcnt = document.querySelector(`.squr[value='${value}']`)  
               sqcnt.innerHTML = "";
+             data = [
+                "0","1","2",
+                "3","4","5",
+                "6","7","8"
+            ]
     }
 }
