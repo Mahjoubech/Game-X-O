@@ -61,5 +61,14 @@ for(let itm of squr){
             alert(`${win} is Won !!`)
             return;
            }
+           let draw = true
+       for(sqr of data){
+        if( (sqr != "X")&&(sqr != "O")){
+         draw = false 
+        }
+       }
+       if(draw){
+        alert('draw')
+       }
     }
     }
