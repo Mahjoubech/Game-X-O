@@ -95,4 +95,5 @@ for(let itm of squr){
                 "6","7","8"
             ]
     }
+    finsh = false;
 }
