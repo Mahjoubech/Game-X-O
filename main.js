@@ -78,3 +78,16 @@ for(let itm of squr){
        }
     }
     }
+
+     let rest = document.getElementById('reset')
+    rest.addEventListener("click",()=>{
+        reset();
+    })
+
+    function reset(){
+        for(itm of squr){
+               let value = itm.getAttribute("value") ;
+               let sqcnt = document.querySelector(`.squr[value='${value}']`)  
+              sqcnt.innerHTML = "";
+    }
+}
