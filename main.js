@@ -20,7 +20,9 @@ for(let itm of squr){
       
     })
     function winner(){
-
+        if(finsh){
+            return
+        }
         if((data[0]==data[1]) && (data[1]==data[2])){
          let win = crr == "X"? "X" : "O";
          alert(`${win} is Won !!`)
@@ -68,6 +70,7 @@ for(let itm of squr){
         }
        }
        if(draw){
+        finsh = true
         alert('draw')
        }
     }
