@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: wheat;
+}
+
+#header{
+ background-color:#868080;
+ color: whitesmoke;
+ border-radius: 30px;
+ box-shadow: 0px 5px 13px rgba(0,0,0,0.3);
+ text-align: center;
+ width: 60%;
+ 
+}
