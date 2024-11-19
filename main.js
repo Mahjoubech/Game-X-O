@@ -1,4 +1,5 @@
 let squr = document.getElementsByClassName("squr")
+let inst = document.getElementById('instract')
 let finsh = false;
 let crr = "X";
 let data = [
@@ -17,8 +18,6 @@ for(let itm of squr){
        sqcnt.innerHTML = crr;
        data[index] = crr 
       console.log(data);
-      let inst = document.getElementById('instract')
-    
         winner();
        crr === "X"? crr = "O": crr = "X";
          inst.textContent = `${crr} Turn`
@@ -98,4 +97,7 @@ for(let itm of squr){
             ]
     }
     finsh = false;
+    crr = "X"
+    inst.innerText = `${crr} Turn`
+
 }
