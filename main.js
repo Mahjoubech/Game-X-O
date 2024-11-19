@@ -9,9 +9,12 @@ let data = [
 for(let itm of squr){
     itm.addEventListener("click",()=>{
        let value = itm.getAttribute("value") ;
+       let index = value - 1;
+       if(data[index]=="X" || data[index]=="O"){
+        return
+       }
        let sqcnt = document.querySelector(`.squr[value='${value}']`)  
        sqcnt.innerHTML = crr;
-       let index = value - 1;
        data[index] = crr 
       console.log(data);
         winner();
